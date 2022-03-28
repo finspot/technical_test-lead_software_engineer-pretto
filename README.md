@@ -1,4 +1,4 @@
-# 🏡 Part 1: Exercise
+### 🏡 Part 1: Exercise
 
 You need to build a simple page that reflects the following Figma project:
 
@@ -12,7 +12,7 @@ The page is made out of 2 main components: a **sticky** navigation bar and a **c
 - The mobile version of the menu may be ignored since there ain't any design provided in this test.
 - You'll find some resources in the attached folder.
 
-# 💼 Part 2: Presentation
+### 💼 Part 2: Presentation
 
 You will present the result of your exercise (that you would have sent prior to the presentation) and we'll discuss your choices, and why you think you made the right ones taking into account the lack of time and context.
 
@@ -20,7 +20,7 @@ Then, you will present a piece of code of your own. This work has to portray cha
 
 In general, we want you to be as exhaustive as possible, think out loud, do not keep anything valuable for yourself.
  
-# 💼 Part 3: Questions
+### 💼 Part 3: Questions
 
 Last but not least, we'll go through a round of questions following these 2 parts, some prepared and some that would probably have popped along the way.
 
