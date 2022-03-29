@@ -9,7 +9,7 @@ The page is made out of 2 main components: a **sticky** navigation bar and a **c
 **Notes**
 
 - The carousel has to slide horizontally on mobile only. There won't be more than 3 items within.
-- The mobile version of the menu may be ignored since there ain't any design provided in this test.
+- The mobile version of the menu may be ignored since there isn't any design provided in this test.
 - You'll find some resources in the attached folder.
 
 ### 💼 Part 2: Presentation
