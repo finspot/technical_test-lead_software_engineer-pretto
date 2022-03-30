@@ -21,14 +21,12 @@ const ExpandableItem = ({
   useEffect(() => {
     // handles closing of subnav when clicking outside of it
     if (ref.current) {
-      const handleClick = ({ target }: Event) => {
-        if (ref.current && !ref.current.contains(target as Node)) {
-          setExpanded(false);
-        }
-      };
-
       ["click", "touchstart"].forEach((type) =>
-        document.addEventListener(type, handleClick)
+        document.addEventListener(type, ({ target }) => {
+          if (ref.current && !ref.current.contains(target as Node)) {
+            setExpanded(false);
+          }
+        })
       );
     }
   }, [ref]);
