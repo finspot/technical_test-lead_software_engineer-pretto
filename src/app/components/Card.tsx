@@ -25,7 +25,7 @@ export const Card = ({
     <p className="flex-1 leading-6">{content}</p>
     <div className="flex justify-end">
       <button
-        className="flex w-16 h-16 justify-center items-center bg-accent1 hover:bg-accent1-hover rounded-lg"
+        className="flex w-16 h-16 justify-center items-center bg-accent1 hover:bg-accent1-hover rounded-lg transition"
         title={title}
         type="button"
       >
