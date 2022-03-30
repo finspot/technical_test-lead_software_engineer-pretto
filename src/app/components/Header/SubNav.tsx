@@ -22,7 +22,7 @@ export const SubNav = ({
   <Transition in={expanded} timeout={TRANSITION_DURATION}>
     {(state) => (
       <ul
-        className={`fixed ml-4 -mt-6 py-2 z-10 shadow bg-white rounded-lg text-neutral1 transition-opacity duration-${TRANSITION_DURATION}`}
+        className={`fixed ml-4 -mt-6 py-2 z-header shadow bg-white rounded-lg text-neutral1 transition-opacity duration-${TRANSITION_DURATION}`}
         style={{ ...TRANSITION_STYLES[state] }}
       >
         {items.map(({ content, label, href }) => (

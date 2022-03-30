@@ -21,5 +21,8 @@ module.exports = {
       md: "1024px",
       sm: "744px",
     },
+    zIndex: {
+      header: 10,
+    },
   },
 };
