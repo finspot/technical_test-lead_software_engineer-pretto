@@ -4,7 +4,8 @@ import { ChevronIcon } from "../icons/ChevronIcon";
 import { SubNav } from "./SubNav";
 import { NavItemProps, NavSubItem } from "./types";
 
-const ITEM_CLASS_NAME = "px-4 py-[31px] w-full h-full";
+const ITEM_CLASS_NAME =
+  "px-4 py-[31px] w-full h-full border border-dashed border-primary1 focus:border-error2 hover:opacity-70 transition-opacity duration-200 ease-in-out";
 
 const ExpandableItem = ({
   label,
@@ -39,7 +40,7 @@ const ExpandableItem = ({
         title={label}
         type="button"
       >
-        <span className="mr-4">{label}</span>
+        <span className="relative mr-4">{label}</span>
         <ChevronIcon className="rotate-90" />
       </button>
       <SubNav expanded={expanded} items={items} />
@@ -48,12 +49,12 @@ const ExpandableItem = ({
 };
 
 export const NavItem = ({ content, label, items, href }: NavItemProps) => (
-  <li className="relative leading-6 border border-dashed border-primary1 hover:border-error2 focus:border-error2">
+  <li className="relative leading-6 pretto-nav-item">
     {items?.length ? (
       <ExpandableItem items={items} label={label} />
     ) : (
       <a className={`block ${ITEM_CLASS_NAME}`} href={href} title={label}>
-        {content ?? label}
+        {content ?? <span className="relative">{label}</span>}
       </a>
     )}
   </li>

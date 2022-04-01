@@ -30,12 +30,15 @@ export const CARDS = [
  * navbar content
  */
 export const NAV_ITEMS: NavItemProps[] = [
-  { label: "Taux immobilier", href: "#" },
+  { label: "Taux immobilier", href: "https://www.pretto.fr/taux-immobilier/" },
   {
     label: "En savoir plus",
     items: [
-      { label: "Comment ça marche ?", href: "#" },
-      { label: "Notre équipe", href: "#" },
+      {
+        label: "Comment ça marche ?",
+        href: "https://www.pretto.fr/notre-service/",
+      },
+      { label: "Notre équipe", href: "https://www.pretto.fr/qui-sommes-nous/" },
       {
         content: (
           <span className="flex items-center text-primary1">
@@ -44,11 +47,15 @@ export const NAV_ITEMS: NavItemProps[] = [
           </span>
         ),
         label: "Pretto dans la presse",
-        href: "#",
+        href: "https://www.pretto.fr/presse/",
       },
     ],
   },
-  { label: "FAQ", href: "#" },
-  { label: "Contact", href: "#" },
-  { content: <UserIcon />, label: "Account", href: "#" },
+  { label: "FAQ", href: "https://faq.pretto.fr/fr/" },
+  { label: "Contact", href: "https://www.pretto.fr/contact/" },
+  {
+    content: <UserIcon />,
+    label: "Account",
+    href: "https://app.pretto.fr/login/",
+  },
 ];

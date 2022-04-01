@@ -9,16 +9,15 @@ html {
 }
 
 /**
-  * slick-dots styling to match Figma
+  * custom styles
   */
-.slick-dots.pretto-dots li {
-  @apply m-0;
+
+.pretto-nav-item a span::before,
+.pretto-nav-item button span::before {
+  @apply absolute inset-x-0 bottom-0 content-[""] bg-white h-px transition-transform ease-in-out duration-200 scale-x-0;
 }
 
-.slick-dots.pretto-dots li button::before {
-  @apply text-neutral3 opacity-100 text-xs;
-}
-
-.slick-dots.pretto-dots li.slick-active button::before {
-  @apply text-primary1 opacity-100;
+.pretto-nav-item:hover a span::before,
+.pretto-nav-item:hover button span::before {
+  @apply scale-x-100;
 }

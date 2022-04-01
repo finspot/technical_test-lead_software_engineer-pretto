@@ -1,0 +1,14 @@
+/**
+  * slick-dots styling to match Figma
+  */
+.slick-dots.pretto-dots li {
+  @apply m-0;
+}
+
+.slick-dots.pretto-dots li button::before {
+  @apply text-neutral3 opacity-100 text-xs;
+}
+
+.slick-dots.pretto-dots li.slick-active button::before {
+  @apply text-primary1 opacity-100;
+}
