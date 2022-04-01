@@ -4,11 +4,13 @@ export const Card = ({
   className = "",
   content,
   headline,
+  href,
   title,
 }: {
   className?: string;
   content: string;
   headline: string;
+  href: string;
   title: string;
 }) => (
   <article
@@ -24,13 +26,13 @@ export const Card = ({
     </h2>
     <p className="flex-1 leading-6">{content}</p>
     <div className="flex justify-end">
-      <button
-        className="flex w-16 h-16 justify-center items-center bg-accent1 hover:bg-accent1-hover rounded-lg transition"
+      <a
+        className="flex group w-16 h-16 justify-center items-center bg-accent1 hover:bg-accent1-hover rounded-lg transition ease-out"
+        href={href}
         title={title}
-        type="button"
       >
-        <ChevronIcon />
-      </button>
+        <ChevronIcon className="transition-transform duration-500 group-hover:translate-x-1" />
+      </a>
     </div>
   </article>
 );

@@ -10,18 +10,21 @@ export const CARDS = [
     content:
       "Découvrez les taux du moment en fonction de votre profil d'acheteur et de votre durée d'emprunt. Une vision complète du marché.",
     headline: "dans l'oeil du datalab",
+    href: "https://www.pretto.fr/taux-immobilier/barometre-taux-immobiliers/",
     title: "Le baromètre des taux",
   },
   {
     content:
       "Mensualités, taux d'endettement, frais de remboursement ou de notaire etc. Anticipez-les grâce à nos différentes calculettes.",
     headline: "instantané",
+    href: "https://www.pretto.fr/simulation-pret-immobilier/calculette-pret-immobilier/",
     title: "Les calculettes",
   },
   {
     content:
       "Tableau d'amortissement, check lists et lettres types, tous les documents dont vous avez besoin durant votre achat.",
     headline: "prêt à l'emploi",
+    href: "https://www.pretto.fr/guide/base-documentaire/",
     title: "Documents pratiques",
   },
 ];

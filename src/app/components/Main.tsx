@@ -23,12 +23,13 @@ export const Main = () => (
         { breakpoint: 10000, settings: "unslick" },
       ]}
     >
-      {CARDS.map(({ content, headline, title }, i) => (
+      {CARDS.map(({ content, headline, href, title }, i) => (
         <Card
           key={title}
           className={i < CARDS.length - 1 ? "mr-5" : ""}
           content={content}
           headline={headline}
+          href={href}
           title={title}
         />
       ))}
