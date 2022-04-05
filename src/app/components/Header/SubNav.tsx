@@ -26,13 +26,20 @@ export const SubNav = ({
       {(state) => (
         <ul
           ref={ref}
+          aria-hidden
           className={`fixed ml-4 -mt-6 py-2 z-header shadow bg-white rounded-lg text-neutral1 transition-opacity duration-${TRANSITION_DURATION}`}
+          role="menu"
           style={{ ...TRANSITION_STYLES[state] }}
         >
           {items.map(({ content, label, href }) => (
-            <li key={label}>
+            <li
+              key={label}
+              aria-controls="main-menu"
+              role="menuitem"
+              tabIndex={-1}
+            >
               <a
-                className="block px-4 py-2 hover:bg-neutral4"
+                className="block py-2 px-4 hover:bg-neutral4"
                 href={href}
                 title={label}
               >

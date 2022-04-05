@@ -14,7 +14,7 @@ export const Main = () => (
       arrows={false}
       centerMode
       centerPadding="20px"
-      className="md:flex justify-center md:space-x-6"
+      className="justify-center md:flex md:space-x-6"
       dots
       dotsClass="slick-dots pretto-dots"
       infinite={false}

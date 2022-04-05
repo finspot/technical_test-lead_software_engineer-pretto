@@ -3,9 +3,14 @@ import { HamburgerIcon } from "../icons/HamburgerIcon";
 import { NavItem } from "./NavItem";
 
 export const Header = () => (
-  <header className="flex items-center justify-end sticky z-header shadow top-0 inset-x-0 bg-primary1 px-5">
+  <header className="flex sticky inset-x-0 top-0 z-header justify-end items-center px-5 bg-primary1 shadow">
     <nav>
-      <ul className="hidden sm:flex space-x-4">
+      <ul
+        className="hidden space-x-4 sm:flex"
+        id="main-menu"
+        role="menubar"
+        tabIndex={0}
+      >
         {NAV_ITEMS.map(({ content, label, href, items }) => (
           <NavItem
             key={label}
@@ -17,7 +22,7 @@ export const Header = () => (
         ))}
       </ul>
     </nav>
-    <button aria-label="menu" className="sm:hidden py-[30px]" type="button">
+    <button aria-label="menu" className="py-[30px] sm:hidden" type="button">
       <HamburgerIcon />
     </button>
   </header>

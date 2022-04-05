@@ -1,9 +1,16 @@
 {
   "extends": [
     "airbnb-typescript-prettier",
-    "plugin:typescript-sort-keys/recommended"
+    "plugin:typescript-sort-keys/recommended",
+    "plugin:tailwindcss/recommended"
   ],
-  "plugins": ["import", "no-only-tests", "react-hooks", "typescript-sort-keys"],
+  "plugins": [
+    "import",
+    "no-only-tests",
+    "react-hooks",
+    "typescript-sort-keys",
+    "tailwindcss"
+  ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/naming-convention": [

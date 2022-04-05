@@ -49,7 +49,13 @@ const ExpandableItem = ({
 };
 
 export const NavItem = ({ content, label, items, href }: NavItemProps) => (
-  <li className="relative leading-6 pretto-nav-item">
+  <li
+    aria-controls="main-menu"
+    aria-haspopup={!!items?.length}
+    className="relative leading-6 pretto-nav-item"
+    role="menuitem"
+    tabIndex={-1}
+  >
     {items?.length ? (
       <ExpandableItem items={items} label={label} />
     ) : (
