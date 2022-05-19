@@ -1,0 +1,72 @@
+{
+  "extends": [
+    "airbnb-typescript-prettier",
+    "plugin:typescript-sort-keys/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": [
+    "import",
+    "no-only-tests",
+    "react-hooks",
+    "typescript-sort-keys",
+    "tailwindcss"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/naming-convention": [
+      "error",
+      { "selector": "default", "format": [], "trailingUnderscore": "forbid" },
+      { "selector": "enumMember", "format": ["PascalCase"] },
+      { "selector": "typeLike", "format": ["PascalCase"] }
+    ],
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/no-use-before-define": [2],
+    "@typescript-eslint/prefer-optional-chain": 2,
+    "@typescript-eslint/prefer-ts-expect-error": 2,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      { "js": "never", "jsx": "never", "ts": "never", "tsx": "never" }
+    ],
+    "import/no-default-export": 2,
+    "import/no-unresolved": [
+      2,
+      { "commonjs": true, "amd": true, "caseSensitive": true }
+    ],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "groups": [
+          "builtin",
+          "external",
+          ["internal", "parent", "sibling", "index"]
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@autofidev/**",
+            "group": "external",
+            "position": "after"
+          },
+          { "pattern": "~*/**", "group": "internal", "position": "before" }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "no-only-tests/no-only-tests": 2,
+    "react-hooks/exhaustive-deps": 1,
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ],
+    "react/jsx-filename-extension": [2, { "extensions": [".tsx"] }],
+    "react/jsx-indent-props": [1, 2],
+    "react/jsx-key": 2,
+    "react/jsx-props-no-spreading": 1,
+    "react/jsx-sort-props": [2, { "reservedFirst": true }],
+    "react/react-in-jsx-scope": 0,
+    "react/require-default-props": 0
+  },
+  "settings": { "import/resolver": { "typescript": {} } }
+}

@@ -1,0 +1,29 @@
+@import "./fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply text-white;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+  * custom styles
+  */
+
+.pretto-nav-item a span::before,
+.pretto-nav-item button span::before {
+  @apply absolute inset-x-0 bottom-0 content-[""] bg-white h-px transition-transform ease-in-out duration-200 scale-x-0;
+}
+
+.pretto-nav-item:hover a span::before,
+.pretto-nav-item:hover button span::before {
+  @apply scale-x-100;
+}
